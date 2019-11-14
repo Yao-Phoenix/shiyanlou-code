@@ -32,7 +32,7 @@ def main(path):
     :return: 若文件存在则为 True， 否则 False
     """
     if os.path.exists(path):
-        spaces, tabs. lines = parse_file(path)
+        spaces, tabs, lines = parse_file(path)
         print("Spaces {}. tabs {}. lines {}".format(spaces, tabs, lines))
         return True
     else:
